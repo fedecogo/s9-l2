@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomNavbar from './componenti/CustomNavbar';
 import MtFooter from './componenti/MtFooter';
 import Welcome from './componenti/Welcome';
-import AllBook from './componenti/AllBooks';
+import Booklist from './componenti/Booklist';
+import Scifi from './data/scifi.json'
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       <CustomNavbar />
       <Welcome/>
-      <AllBook/>
+      <Booklist arrayOfBooks={Scifi}/>
       <MtFooter/>
     </div>
   );
